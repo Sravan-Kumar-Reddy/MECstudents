@@ -35,6 +35,8 @@ def index(request):
 def student_home(request):
     return render(request,'students/student_home.html')
 
+def admin_home(request):
+    return render(request,'students/admin_home.html')
 def get_details(request):
     # if this is a POST request we need to process the form data
     if request.method == 'POST':

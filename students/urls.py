@@ -15,4 +15,5 @@ urlpatterns = [
     path('electives/<student_id>',views.submit_electives),
     path('update_gpa',views.update_gpa),
     path('student_home',views.student_home),
+    path('admin_home',views.admin_home),
 ]
