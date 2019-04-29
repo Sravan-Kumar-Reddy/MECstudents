@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+        <center>
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Mahindra_Ecole_Centrale.jpg/200px-Mahindra_Ecole_Centrale.jpg"  alt="MAHINDRA ECOLE CENTRALE">
+             <br/><br/>
+    <h1>Welcome {{ students_entries.Name }}<h1>
+            <h2>Courses Taken and their grades are as follows:</h2>
+
+            <table class="table table-bordered" style="text-align:center; border:0; cellpadding:0;cellspacing:0">
+                <tr>
+                    <td style="width: 200px;">
+                        <h4>Course ID</h4>
+                    </td>
+                    <td style="width: 200px;">
+                        <h4>Grade Awarded</h4>
+                    </td>
+                </tr>
+                {% for entry in Grade_entries%}
+                <tr>
+                    <td>{{entry.Course_id}}</td>
+                    <td>{{entry.Grade}}</td>
+                </tr>
+                {%endfor%}
+
+            </table>
+            <div style="background-color:yellowgreen; border:2px solid yellowgreen;padding:1rem 1rem 0 1rem;margin:1rem !important; border-radius: 2%; align-content: center;">
+                <p >    Your CGPA is :{{students_entries.CGPA}}</p>
+            </div>
+        </center>
+            
+</body>
+
+</html>

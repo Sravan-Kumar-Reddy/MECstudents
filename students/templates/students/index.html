@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+
+<body style="background-color:#F9FAF2">
+    <div>
+        <center>
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Mahindra_Ecole_Centrale.jpg/200px-Mahindra_Ecole_Centrale.jpg"  alt="MAHINDRA ECOLE CENTRALE">
+            </center>
+</div>
+
+    <div class="demoHead"></div>
+    <div>
+        <div style="float:left">
+            <h1>Student Records</h1>
+            <div style="clear:both;"></div>
+        </div>
+
+    </div>
+    <br/>
+    <center>
+        <h2>Students </h2>
+    </center>
+    <hr>
+    <table style="text-align:center; border:0;border-radius: 15px;margin:10px; cellpadding:0;cellspacing:0" class="table table-bordered">
+        <thead class="thead-dark">
+            <th style="width: 200px;" class="thead-dark"><h4>ID</h4></th>
+            <th style="width: 200px;" class="thead-dark"><h4>Name</h4></th>
+            <th style="width: 200px;" class="thead-dark"><h4>Email</h4></th>
+            <th style="width: 200px;" class="thead-dark"><h4>Batch</h4></th>
+            <th style="width: 200px;" class="thead-dark"><h4>Semester</h4></th>
+            <th style="width: 200px;" class="thead-dark"><h4>CGPA</h4></th>
+            <th style="width: 250px;" class="thead-dark"><h4>Courses</h4></th>
+        </thead>
+        {% for entry in students_entries %}
+        <tr>
+            <td>{{entry.Student_id}}</td>
+            <td>{{entry.Name}}</td>
+            <td>{{entry.Email}}</td>
+            <td>{{entry.Batch}}</td>
+            <td>{{entry.Semester}}</td>
+            <td>{{entry.CGPA}}</td>
+            <td>{{entry.courses.all|join:','}}</td>
+        </tr>
+        {%endfor%}
+        
+    </table>
+    
+    <center>
+            <h2>Courses</h2>
+        </center>
+        <hr>
+        <table class="table table-bordered" style="text-align:center; border:0; cellpadding:0;cellspacing:0">
+            <thead class="thead-dark">
+                <th style="width: 200px;"><h4>Course ID</h4></th>
+                <th style="width: 200px;"><h4>Course Name</h4></th>
+                <th style="width: 200px;"><h4>Course Credits</h4></th>
+                <th style="width: 200px;"><h4>Lectures</h4></th>
+                <th style="width: 200px;"><h4>Lab</h4></th>
+                <th style="width: 200px;"><h4>Practicals</h4></th>
+                <th style="width: 200px;"><h4>Semester</h4></th>
+                <th style="width: 200px;"><h4>Course Type</h4></th>
+                <th style="width: 200px;"><h4>Instructor</h4></th>
+            </thead>
+            {% for entry in courses_entries %}
+            <tr>
+                <td>{{entry.Course_id}}</td>
+                <td>{{entry.Course_Name}}</td>
+                <td>{{entry.Course_credits}}</td>
+                <td>{{entry.Lectures}}</td>
+                <td>{{entry.Lab}}</td>
+                <td>{{entry.Practicals}}</td>
+                <td>{{entry.Semester}}</td>
+                <td>{{entry.Course_Type}}</td>
+                <td>{{entry.Instructor_id}}</td>
+            </tr>
+            {%endfor%}
+            
+        </table>
+
+        <center>
+                <h2>Instructors</h2>
+            </center>
+            <hr>
+            <table class="table table-bordered" style="text-align:center; border:0; cellpadding:0;cellspacing:0">
+                <thead class="thead-dark">
+                    <th style="width: 200px;"><h4>ID</h4></th>
+                    <th style="width: 200px;"><h4>Name</h4></th>
+                    <th style="width: 200px;"><h4>Email</h4></th>
+                </thead>
+                {% for entry in instructors_entries %}
+                <tr>
+                    <td>{{entry.Instructor_id}}</td>
+                    <td>{{entry.Name}}</td>
+                    <td>{{entry.Email}}</td>
+                </tr>
+                {%endfor%}
+                
+            </table>
+
+
+</body>
+
+</html>

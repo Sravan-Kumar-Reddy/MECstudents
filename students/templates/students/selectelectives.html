@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <center>
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Mahindra_Ecole_Centrale.jpg/200px-Mahindra_Ecole_Centrale.jpg"  alt="MAHINDRA ECOLE CENTRALE">
+                        </center>
+    <form action="/electives/{{student_id.Student_id}}">
+        <label for="Electives">Choose the elctives opted:</label><br/>
+        {% for i in course_entries%}
+        <input id="Electives"   type="checkbox" name="course_name" value={{i.Course_id}}> {{i.Course_Name}}
+        <br/>
+        {% endfor %}
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>

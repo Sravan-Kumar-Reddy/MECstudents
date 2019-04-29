@@ -1,0 +1,225 @@
+[
+    {
+        "model": "students.Instructors",
+        "fields": {
+            "Instructor_id": 1,
+            "Name": "Jaclyn England",
+            "Email": "jaclynengland@retrack.com"
+        }
+    },
+    {
+        "model": "students.Instructors",
+        "fields": {
+            "Instructor_id": 2,
+            "Name": "Tanisha King",
+            "Email": "tanishaking@retrack.com"
+        }
+    },
+    {
+        "model": "students.Instructors",
+        "fields": {
+            "Instructor_id": 3,
+            "Name": "Helene Peck",
+            "Email": "helenepeck@retrack.com"
+        }
+    },
+    {
+        "model": "students.Instructors",
+        "fields": {
+            "Instructor_id": 4,
+            "Name": "Diane Nieves",
+            "Email": "dianenieves@retrack.com"
+        }
+    },
+    {
+        "model": "students.Instructors",
+        "fields": {
+            "Instructor_id": 5,
+            "Name": "Shauna Cote",
+            "Email": "shaunacote@retrack.com"
+        }
+    },
+    {
+        "model": "students.Instructors",
+        "fields": {
+            "Instructor_id": 6,
+            "Name": "Mollie Buckner",
+            "Email": "molliebuckner@retrack.com"
+        }
+    },
+    {
+        "model": "students.Instructors",
+        "fields": {
+            "Instructor_id": 7,
+            "Name": "Delacruz Jenkins",
+            "Email": "delacruzjenkins@retrack.com"
+        }
+    },
+    {
+        "model": "students.Courses",
+        "fields": {
+            "Course_id": "1",
+            "Course_Name": " Jarvis",
+            "Course_credits": 4,
+            "Lectures": 2,
+            "Lab": 2,
+            "Practicals": 0,
+            "Semester": 7,
+            "Course_Type": 0,
+            "Instructor_id": 1
+        }
+    },
+    {
+        "model": "students.Courses",
+        "fields": {
+            "Course_id": "2",
+            "Course_Name": " Kirkland",
+            "Course_credits": 3,
+            "Lectures": 2,
+            "Lab": 2,
+            "Practicals": 4,
+            "Semester": 7,
+            "Course_Type": 1,
+            "Instructor_id": 2
+        }
+    },
+    {
+        "model": "students.Courses",
+        "fields": {
+            "Course_id": "3",
+            "Course_Name": " Vaughn",
+            "Course_credits": 6,
+            "Lectures": 2,
+            "Lab": 1,
+            "Practicals": 0,
+            "Semester": 5,
+            "Course_Type": 0,
+            "Instructor_id": 3
+        }
+    },
+    {
+        "model": "students.Courses",
+        "fields": {
+            "Course_id": "4",
+            "Course_Name": " Potts",
+            "Course_credits": 8,
+            "Lectures": 1,
+            "Lab": 1,
+            "Practicals": 4,
+            "Semester": 7,
+            "Course_Type": 1,
+            "Instructor_id": 4
+        }
+    },
+    {
+        "model": "students.Courses",
+        "fields": {
+            "Course_id": "5",
+            "Course_Name": " Clay",
+            "Course_credits": 4,
+            "Lectures": 0,
+            "Lab": 0,
+            "Practicals": 1,
+            "Semester": 5,
+            "Course_Type": 0,
+            "Instructor_id": 5
+        }
+    },
+    {
+        "model": "students.Students",
+        "fields": {
+            "Student_id": "1sdfsd",
+            "Name": "Sahaasdadev",
+            "Email": "Saasdash@dev.com",
+            "Batch": "2015",
+            "Branch": "CSE",
+            "CGPA": 10,
+            "Semester": 4
+        }
+    },
+    {
+        "model": "students.Students",
+        "fields": {
+            "Student_id": 1,
+            "Name": "Allison",
+            "Email": "delacruzallison@retrack.com",
+            "Batch": "2016",
+            "Branch": "CSE",
+            "CGPA": 8.9,
+            "Semester": 7
+        }
+    },
+    {
+        "model": "students.Students",
+        "fields": {
+            "Student_id": 2,
+            "Name": "Sanchez",
+            "Email": "delacruzsanchez@retrack.com",
+            "Batch": "2019",
+            "Branch": "CSE",
+            "CGPA": 7.8,
+            "Semester": 5
+        }
+    },
+    {
+        "model": "students.Students",
+        "fields": {
+            "Student_id": 3,
+            "Name": "Horne",
+            "Email": "delacruzhorne@retrack.com",
+            "Batch": "2016",
+            "Branch": "CSE",
+            "CGPA": 6.7,
+            "Semester": 2
+        }
+    },
+    {
+        "model": "students.Students",
+        "fields": {
+            "Student_id": 4,
+            "Name": "Golden",
+            "Email": "delacruzgolden@retrack.com",
+            "Batch": "2016",
+            "Branch": "CSE",
+            "CGPA": 5.6,
+            "Semester": 6
+        }
+    },
+    {
+        "model": "students.Students",
+        "fields": {
+            "Student_id": 5,
+            "Name": "Carver",
+            "Email": "delacruzcarver@retrack.com",
+            "Batch": "2017",
+            "Branch": "CSE",
+            "CGPA": 9.8,
+            "Semester": 6
+        }
+    },
+    {
+        "model": "students.Grades",
+        "fields": {
+            "Student_id": "1sdfsd",
+            "Course_id": "2",
+            "Grade": "B"
+        }
+    },
+    {
+        "model": "students.Grades",
+        "fields": {
+            "Student_id": "2",
+            "Course_id": "5",
+            "Grade": "B"
+        }
+    },
+
+    {
+        "model": "students.Grades",
+        "fields": {
+            "Student_id": "3",
+            "Course_id": "4",
+            "Grade": "C"
+        }
+    }
+]
